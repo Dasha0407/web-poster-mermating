@@ -1,0 +1,430 @@
+html {
+    background: rgb(60, 20, 125);
+  }
+/*html::-webkit-scrollbar {display: none}*/
+h1 {font-family: 'ArethaBridge'}
+h2 {font-family: 'NeutralFace'; font-weight: 200}
+p {font-family: 'Montserrat'; font-weight: 400}
+
+.poster {
+    width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    height: 1700px;
+}
+
+body {
+    margin: 0;
+    cursor: url("../img/cursor.cur"), auto;
+}
+
+/*FIRST BLOCK*/
+
+.firstblock{
+    margin: 0;
+    color: rgb(255, 92, 0);
+    display: flex;
+    justify-content: left;
+    position: relative;
+    animation: first-block 10s linear infinite;
+    animation-play-state: running;
+    text-align: left;
+}
+
+.firstblock h1 {
+    font-size: 700px;
+    font-weight: 100;
+    line-height: 490px;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@keyframes first-block {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-4178px)}
+}
+
+/*SECOND BLOCK*/
+
+.secondblock {
+    margin: 0;
+    font-size: 30px;
+    background-color: rgb(255, 92, 0);
+    color: rgb(60, 20, 125);
+    display: flex;
+    overflow: hidden;
+}
+
+.secondblock h2 {
+    margin: 0;
+    white-space: nowrap;
+    justify-content: space-around; 
+    position: relative;
+    animation: second-block 4s linear infinite;
+}
+
+.space {
+    opacity: 0;
+}
+
+@keyframes second-block {
+    0%{left: 0;}
+    100%{left: -977.4px;}
+}
+
+.secondblock:hover {
+    background-color: rgb(60, 20, 125);
+    color: rgb(255, 92, 0);
+}
+
+/*THIRD BLOCK*/
+
+.thirdblock {
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    
+}
+
+.thirdblock div {
+    width: 50%;
+    text-align: center;
+}
+
+.heart {
+    height: 470px;
+    text-align: center;
+    animation: heart-pulse 1s ease-out infinite;
+    animation-play-state: paused;
+}
+
+.heart:hover {
+    animation-play-state: running;
+}
+
+@keyframes heart-pulse {
+    0% {transform: scale(1);}
+    15% {transform: scale(1.05);}
+    30% {transform: scale(1);}
+    45% {transform: scale(1.05);}
+    60% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+
+.bubbles {
+    position: absolute;
+    height: 500px;
+    padding-top: 20px;
+    left: 53%;
+    z-index: 0;
+}
+
+#bub1 {
+    animation: bub1-gif 0.5s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes bub1-gif {
+    0% {opacity: 100;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#bub2 {
+    animation: bub2-gif 0.5s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes bub2-gif {
+    0% {opacity: 0;}
+    25% {opacity: 100;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#bub3 {
+    animation: bub3-gif 0.5s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes bub3-gif {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 100;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#bub4 {
+    animation: bub4-gif 0.5s linear infinite;
+    animation-play-state: running;
+}
+
+@keyframes bub4-gif {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+/*WAVES*/
+
+.waves {
+    animation: waves-line 1s linear infinite;
+    margin: -30px 0 0 0;
+    height: 59px;
+}
+
+.waves img {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+@keyframes waves-line {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-144px)}
+}
+
+/*FOURTH BLOCK*/
+
+.fourthblock {
+    background-color: rgb(255, 92, 0);
+    margin: 0;
+    z-index: 900;
+}
+
+.fourthblock p {
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    padding-bottom: 70px;
+    color: rgb(60, 20, 125);
+}
+
+/* PURPLE WAVES*/
+
+#purplewaves {
+    animation: waves-line 0.5s linear infinite;
+    margin: -50px 0 0 0;
+}
+
+/*FIFTH BLOCK*/
+
+.fifthblock {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.heartcards {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.up div {
+    width: 120px;
+    background-color: rgb(255, 92, 0);
+    border-radius: 90px 90px 0 0;
+    padding: 40px;
+    text-align: center;
+}
+
+#updiv1 {
+    animation: up-div1-change-color 1s linear infinite;
+}
+
+@keyframes up-div1-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    30% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    60% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+#updiv2 {
+    animation: up-div2-change-color 1s linear infinite;
+}
+
+@keyframes up-div2-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    30% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    60% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+#updiv3 {
+    animation: up-div3-change-color 1s linear infinite;
+}
+
+@keyframes up-div3-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    60% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    90% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+.up {
+    font-size: 40px;
+    color: rgb(60, 20, 125);
+    align-items: flex-start;
+    width: 200x;
+}
+
+.up div h1 {
+    margin: 0;
+}
+
+.down div {
+    background-color: rgb(255, 92, 0);
+    border-radius: 0 90px 90px 0;
+    width: 290px;
+    padding: 40px;
+}
+
+.downdiv1 {
+    animation: down-div1-change-color 1s linear infinite;
+}
+
+@keyframes down-div1-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    30% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    60% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+.downdiv2 {
+    animation: down-div2-change-color 1s linear infinite;
+}
+
+@keyframes down-div2-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    30% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    60% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+.downdiv3 {
+    animation: down-div3-change-color 1s linear infinite;
+}
+
+@keyframes down-div3-change-color {
+    0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    60% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    90% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+    100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+}
+
+.down div p {
+    font-size: 12px;
+    color: rgb(60, 20, 125);
+    line-height: 150%;
+}
+
+/*PURPLE WAVES BIG*/
+
+.purplewavesbig {
+    animation: waves-line 0.5s linear infinite;
+    transition: all 1s ease-out;
+    position: absolute;
+    margin-top: -155px;
+}
+
+.purplewavesbig:hover {
+    margin-top: 280px;
+    padding-top: 100px;
+}
+
+/*FOOTER*/
+
+.footer {
+    margin-top: 72px;
+    z-index: 1000;
+    font-size: 30px;
+    background-color: rgb(255, 92, 0);
+    color: rgb(60, 20, 125);
+    display: flex;
+    overflow: hidden;
+}
+
+.footer h2 {
+    margin: 0;
+    white-space: nowrap;
+    justify-content: space-around; 
+    position: relative;
+    animation: footer-line 4s linear infinite;
+}
+
+.space {
+    opacity: 0;
+}
+
+@keyframes footer-line {
+    0%{left: 0;}
+    100%{left: -960px;}
+}
+
+.footer:hover {
+    background-color: rgb(60, 20, 125);
+    color: rgb(255, 92, 0);
+}
+
+/*SIDE HEARTS*/
+
+.sideheartsleft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgb(255, 92, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: side-hearts 1s linear infinite;
+}
+
+.sideheartsleft img {
+    width: 60px;
+}
+
+.sideheartsright {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(255, 92, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: side-hearts 1s linear infinite;
+}
+
+.sideheartsright img {
+    width: 60px;
+}
+
+@keyframes side-hearts {
+    0%{top: 0;}
+    100%{top: -75px;}
+}
+
+.sideheartsright:hover {
+    animation: side-heart-pulse 1s ease-out infinite;
+    animation-play-state: running;
+}
+
+.sideheartsleft:hover {
+    animation: side-heart-pulse 1s ease-out infinite;
+    animation-play-state: running;
+}
+
+@keyframes side-heart-pulse {
+    0% {transform: scale(1);}
+    15% {transform: scale(1.02);}
+    30% {transform: scale(1);}
+    45% {transform: scale(1.02);}
+    60% {transform: scale(1);}
+    100% {transform: scale(1);}
+}

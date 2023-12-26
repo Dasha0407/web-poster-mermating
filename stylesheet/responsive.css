@@ -1,0 +1,109 @@
+@media (max-width: 1366px) {
+    .body {
+        width: 100vw;
+    }
+    .poster {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .sideheartsright {
+        position: fixed;
+        right: 0;
+    }
+    .heart {
+        height: 50vh;
+    }
+    .thirdblock div {
+        width: 37vw;
+    }
+    .thirdblock {
+        justify-content: space-evenly;
+    }
+    .bubbles {
+        height: 46vh;
+    }
+    .heartcards {
+        width: 23%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heart {
+        height: 38vh;
+    }
+    .bubbles {
+        height: 35vh;
+        top: 580px;
+    }
+    .fourthblock p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .fifthblock {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15%;
+        padding-left: 0;
+    }
+    .poster {
+        height: 2427px;
+    }
+    .heartcards {
+        margin-top: 30px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .sideheartsright, .sideheartsleft {
+        opacity: 0;
+    }
+    .body {
+        width: 100vw;
+    }
+    .poster {
+        height: 2720px;
+    }
+    .poster {
+        margin: auto;
+        width: 100vw;
+    }
+    .secondblock {
+        animation: changecolor 0.5s linear infinite;
+        animation-play-state: running;
+    }
+    @keyframes changecolor {
+        0% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+        50% {background-color: rgb(60, 20, 125); color: rgb(255, 92, 0);}
+        100% {background-color: rgb(255, 92, 0); color: rgb(60, 20, 125);}
+    }
+    .thirdblock {
+        flex-direction: column;
+
+    }
+    .heart {
+        height: 38vh;
+        text-align: center;
+        padding-left: -40px;
+    }
+    .bubbles {
+        height: 33vh;
+        top: 835px;
+        left: 30px;
+    }
+    .waves {
+        margin-top: 200px;
+    }
+    .fourthblock p {
+        margin-left: -50px;
+    }
+    .fifthblock {
+        margin-left: -270px;
+    }
+    .heartcards {
+        width: 150px;
+    }
+}
